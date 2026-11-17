@@ -1,0 +1,50 @@
+{
+  "R01": {
+    "name": "营收环比降幅",
+    "threshold": 0.08,
+    "level": "中",
+    "unit": "ratio"
+  },
+  "R02": {
+    "name": "单店营收环比降幅",
+    "threshold": 0.1,
+    "level": "高",
+    "unit": "ratio"
+  },
+  "R03": {
+    "name": "单店连续三月同比下滑",
+    "threshold": 0.05,
+    "level": "高",
+    "unit": "ratio"
+  },
+  "R04": {
+    "name": "毛利率环比变动",
+    "threshold": 0.02,
+    "level": "中",
+    "unit": "pp"
+  },
+  "R05": {
+    "name": "品类单位成本涨幅",
+    "threshold": 0.1,
+    "level": "高",
+    "unit": "ratio"
+  },
+  "R06": {
+    "name": "预算完成率下限",
+    "threshold": 0.95,
+    "level": "高",
+    "unit": "ratio"
+  },
+  "R07": {
+    "name": "收现率下限",
+    "threshold": 0.95,
+    "level": "中",
+    "unit": "ratio"
+  },
+  "R08": {
+    "name": "新店营收占比上限",
+    "threshold": 0.15,
+    "level": "低",
+    "unit": "ratio"
+  }
+}

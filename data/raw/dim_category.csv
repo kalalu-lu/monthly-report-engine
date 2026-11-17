@@ -1,0 +1,9 @@
+﻿category,base_daily_qty,base_price,cost_ratio,season_type
+现制茶饮,120,18.0,0.32,summer
+咖啡,60,22.0,0.28,flat
+烘焙,45,15.0,0.4,flat
+轻食,40,28.0,0.45,flat
+周边零售,12,35.0,0.5,q4
+冰淇淋,30,12.0,0.3,summer_strong
+果切,35,16.0,0.48,summer
+套餐,25,32.0,0.55,flat

@@ -1,0 +1,40 @@
+# ---------- 密钥：绝不提交 ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Python ----------
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+build/
+dist/
+*.spec
+
+# ---------- 运行产物（用户自己生成的，不入库）----------
+outputs/*.pdf
+outputs/*.html
+outputs/llm/*.md
+outputs/charts/*.svg
+outputs/logs/*.log
+data/imports/
+data/clean/
+
+# ---------- 打包产物 ----------
+便携版构建/
+
+# ---------- 本机专用脚本（含本机绝对路径，不属于通用代码）----------
+启动月报引擎.vbs
+截图*.bat
+
+# ---------- 系统垃圾 ----------
+Thumbs.db
+desktop.ini
+~$*
+.DS_Store
+
+# ---------- 生成物与文档（不入代码库）----------
+outputs/
+*.docx

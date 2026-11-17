@@ -1,0 +1,4 @@
+# 运行只需要三个第三方库（图表是手写 SVG，不需要 matplotlib；页面是本程序拼的，不需要 jinja2）
+pandas>=2.2
+numpy>=1.26
+openpyxl>=3.1
