@@ -18,14 +18,14 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-BUNDLE_NAME = "便携版_月报引擎_v1.0"
+BUNDLE_NAME = "便携版_账墨_v1.1.0"
 
 # 项目里不进包的东西
 SKIP_DIRS = {"__pycache__", ".venv", "build", "dist", ".git", "data/imports",
              "outputs/qa", "tests", "docs"}
 SKIP_SUFFIX = {".exe", ".pyc", ".zip", ".spec"}
-SKIP_FILES = {"月报引擎.exe", ".env", ".gitignore", "report.bat",
-              "打包exe.bat", "启动月报引擎.vbs"}
+SKIP_FILES = {"账墨.exe", ".env", ".gitignore", "report.bat",
+              "打包exe.bat", "启动账墨.vbs"}
 SKIP_PREFIX = ("截图",)
 
 # 运行时里可以省掉的东西（不影响本程序）
@@ -56,7 +56,7 @@ rem copy the runtime once to %LOCALAPPDATA% and launch from there.
 for /f "usebackq delims=" %%r in (`powershell -NoProfile -Command "$p='%HERE%'; if ((($p.ToCharArray()) | Where-Object {[int]$_ -gt 127}).Count -gt 0) {'NO'} else {'YES'}"`) do set "ASCIIPATH=%%r"
 
 if /i "!ASCIIPATH!"=="NO" (
-  set "PYDIR=%LOCALAPPDATA%\MonthlyReport\py"
+  set "PYDIR=%LOCALAPPDATA%\LedgerInk\py"
   if not exist "!PYDIR!\pythonw.exe" (
     echo Bundle path contains non-ASCII characters.
     echo Copying Python runtime to !PYDIR!  ^(one time only, about 130 MB^) ...
@@ -115,12 +115,12 @@ echo.
 pause
 """
 
-README = """月报引擎 便携版 v1.0
+README = """账墨 便携版 v1.0
 ==================================================
 经营月报自动生成系统 —— 选数据、点生成、出 PDF 月报。
 
 【怎么用】
-1. 解压本压缩包到任意目录（建议路径不带空格，例如 D:\\月报引擎）
+1. 解压本压缩包到任意目录（建议路径不带空格，例如 D:\\账墨）
 2. 双击 run.bat
 3. 界面里：选数据源 → 选报告期 → 点「生成月报」
 4. 生成的 PDF 在 outputs\\ 下，程序会自动打开

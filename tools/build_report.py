@@ -396,7 +396,7 @@ def main(month: str = "2025-10", make_pdf: bool = True) -> dict:
                       doc_title=f"{fp['meta']['company']} {month} 经营月报")
 
     print("=" * 68)
-    print("『月报引擎』Stage B —— 版面求解与出稿")
+    print("『账墨』Stage B —— 版面求解与出稿")
     print("=" * 68)
     print(f"文案来源   : {src}（评级 {narrative.get('rating')}）")
     print(f"DSL        : {dsl_path.relative_to(ROOT)}（{len(scene.blocks)} 块 / {len(scene.constraints)} 条约束）")

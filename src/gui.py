@@ -1,8 +1,8 @@
 """
-月报引擎 · 桌面客户端
+账墨 · 桌面客户端
 
 面向企业的使用方式：
-   双击桌面上的「月报引擎」→ 选数据（或下载模板填好）→ 选报告期 → 点「生成月报」
+   双击桌面上的「账墨」→ 选数据（或下载模板填好）→ 选报告期 → 点「生成月报」
    → 30 秒后自动打开 PDF。
 
 设计要点：
@@ -49,9 +49,9 @@ from src import paths, template  # noqa: E402
 
 ROOT = paths.app_root()
 
-APP_NAME = "月报引擎"
+APP_NAME = "账墨"
 APP_SUB = "经营月报自动生成系统"
-VERSION = "1.0"
+VERSION = "1.1.0"
 ASSETS = paths.res_root() / "assets"
 OUT = ROOT / "outputs"
 IMPORTS = ROOT / "data" / "imports"

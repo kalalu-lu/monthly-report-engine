@@ -31,7 +31,7 @@ def main(month: str = "2025-10") -> dict:
         d.mkdir(parents=True, exist_ok=True)
 
     print("=" * 68)
-    print(f"『月报引擎』Stage A 流水线    报告期：{month}")
+    print(f"『账墨』Stage A 流水线    报告期：{month}")
     print("=" * 68)
 
     # ---- 1. 读取 + 校验 ----

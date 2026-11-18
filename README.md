@@ -1,4 +1,4 @@
-# 月报引擎 · 经营月报自动生成系统
+# 账墨 · 经营月报自动生成系统
 
 把一份经营明细表，自动变成一份能直接发给老板的图文月报（A4 三页 PDF）。
 
@@ -16,20 +16,20 @@
 
 ### 方式一：下载便携包（不需要装 Python）
 
-到 [Releases](../../releases) 下载 `便携版_月报引擎_v1.0.zip`，解压后双击 `run.bat`。
+到 [Releases](../../releases) 下载 `便携版_账墨_v1.0.zip`，解压后双击 `run.bat`。
 
 - 包内自带 Python 3.12 运行时和依赖库，解压即用，不写注册表
 - **全程不产生任何 .exe**，因此不会触发 SmartScreen / Smart App Control 对未签名程序的拦截
 - 首次运行会在 `outputs\` 下生成结果；示例成品见包内 `示例月报_2025-10.pdf`
 
-> 若解压路径含中文字符，`run.bat` 会自动把运行时复制到 `%LOCALAPPDATA%\MonthlyReport\py` 再启动
+> 若解压路径含中文字符，`run.bat` 会自动把运行时复制到 `%LOCALAPPDATA%\LedgerInk\py` 再启动
 > （Chromium 无法由位于非 ASCII 路径下的 Python 启动，会静默挂住）。
 
 ### 方式二：从源码运行（开发者）
 
 ```bash
 git clone <本仓库地址>
-cd monthly_report_engine
+cd ledgerink
 pip install -r requirements.txt          # 只有 pandas / numpy / openpyxl 三个
 python -m src.gui                        # 桌面界面
 ```
